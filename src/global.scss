@@ -1,0 +1,31 @@
+$xlWidth: 1536px;
+$lWidth: 1366px;
+$mWidth: 1024px;
+$smWidth: 425px;
+
+
+
+@mixin xl {
+    @media(max-width: #{$xlWidth}){
+        @content
+    }
+}
+
+
+@mixin l {
+    @media(max-width: #{$lWidth}){
+        @content
+    }
+}
+
+@mixin m {
+    @media(max-width: #{$mWidth}){
+        @content
+    }
+}
+
+@mixin sm {
+    @media(max-width: #{$smWidth}){
+        @content
+    }
+}

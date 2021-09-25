@@ -1,0 +1,73 @@
+@import "../../global.scss";
+
+.secondSlide {
+  background-color: white;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+
+  @include m {
+    text-align: center;
+  }
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    justify-content: center;
+
+    @include m {
+      width: 80%;
+    }
+
+    h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 15px 0 20px 0;
+
+      @include xl {
+        font-size: 18px;
+      }
+
+      @include m {
+        font-size: 16px;
+      }
+    }
+
+    .content {
+      display: flex;
+      text-align: justify;
+      font-size: 18px;
+      line-height: 1.6;
+
+      @include xl {
+        font-size: 16px;
+        width: 100%;
+      }
+      @include sm {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .ownName {
+    display: flex;
+    justify-content: center;
+    font-family: "Carattere", cursive;
+    font-size: 40px;
+    margin: 80px 0 30px 0;
+
+    @include xl {
+      font-size: 28px;
+    }
+
+    @include m {
+      font-size: 24px;
+    }
+  }
+}

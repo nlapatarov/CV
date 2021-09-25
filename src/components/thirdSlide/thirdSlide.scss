@@ -1,0 +1,181 @@
+@import "../../global.scss";
+
+.thirdSlide {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+
+  .info {
+    display: flex;
+    height: 30%;
+    width: 100%;
+    margin-top: 20px;
+
+    .dividingLine {
+      border-right: 3px solid black;
+      border-image: linear-gradient(
+          to bottom,
+          rgb(180, 148, 4),
+          rgba(253, 234, 128, 0)
+        )
+        1 50%;
+    }
+
+    .hobies {
+      flex: 1;
+
+      margin-right: 20px;
+      display: flex;
+      flex-direction: column;
+
+      @include sm {
+        margin-right: 5px;
+      }
+
+      h3 {
+        font-size: 18px;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 15px;
+
+        @include sm {
+          font-size: 16px;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+
+        @include sm {
+          text-align: center;
+        }
+
+        li {
+          display: flex;
+          justify-content: flex-end;
+          margin: 5px 0 5px 0;
+
+          @include sm {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .contact {
+      flex: 1;
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+
+      @include sm {
+        margin-left: 5px;
+      }
+
+      h3 {
+        font-size: 18px;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 15px;
+
+        @include sm {
+          font-size: 16px;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding-left: 0;
+        
+        @include sm {
+          font-size: 14px;
+        }
+
+        
+
+        li {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin: 5px 0 5px 0;
+
+         @include sm{
+          &:last-child{
+            .icons{
+              display: none;
+            }
+          }
+         }
+
+          .icons {
+            margin-right: 5px;
+          }
+
+          a {
+            text-decoration: none;
+          }
+
+          
+        }
+      }
+    }
+  }
+
+  .myProjects {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 50px 0;
+
+    h3 {
+      display: flex;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 15px;
+
+      @include xl {
+        font-size: 20px;
+      }
+
+      @include sm {
+        font-size: 18px;
+      }
+    }
+
+    ul {
+      padding-left: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      li {
+        text-align: center;
+        margin-bottom: 20px;
+
+        a {
+          font-size: 18px;
+
+          @include sm {
+            font-size: 16px;
+          }
+        }
+
+        p {
+          margin-top: 5px;
+
+          @include sm {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
