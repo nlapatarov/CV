@@ -26,31 +26,37 @@ function ThirdSlide() {
         <div className="contact">
           <h3>CONTACT</h3>
           <ul>
-          
             <li>
               <FiPhoneCall className="icons" /> +359896869876
             </li>
-            
 
             <li>
               <GrFacebook className="icons" />
               <a
                 href="https://www.facebook.com/nikolay.lapatarov.92"
                 target="_blank"
+                rel="noreferrer"
               >
                 Facebook
               </a>
             </li>
             <li>
               <SiLinkedin className="icons" />
-              <a href="https://www.linkedin.com/" target="_blank">
-                Linkedin
+              <a
+                href="linkedin.com/in/nikolay-lapatarov-74856b221"
+                target="_blank"
+              >
+                LinkedIn
               </a>
             </li>
 
             <li>
               <FaGithub className="icons" />
-              <a href="https://github.com/nlapatarov" target="_blank">
+              <a
+                href="https://github.com/nlapatarov"
+                target="_blank"
+                rel="noreferrer"
+              >
                 GitHub
               </a>
             </li>
@@ -65,7 +71,11 @@ function ThirdSlide() {
         <h3>My Projects</h3>
         <ul>
           <li>
-            <a href="https://nlapatarov.github.io/myTodoList/" target="_blank">
+            <a
+              href="https://nlapatarov.github.io/myTodoList/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Todo List
             </a>
             <p>
@@ -78,6 +88,7 @@ function ThirdSlide() {
             <a
               href="https://nlapatarov.github.io/react-portfolio/"
               target="_blank"
+              rel="noreferrer"
             >
               React Portfolio
             </a>
@@ -87,7 +98,11 @@ function ThirdSlide() {
             </p>
           </li>
           <li>
-            <a href="https://github.com/nlapatarov/Exercises" target="_blank">
+            <a
+              href="https://github.com/nlapatarov/Exercises"
+              target="_blank"
+              rel="noreferrer"
+            >
               Exercises
             </a>
             <p>All my exercises that I did during my self-study </p>
